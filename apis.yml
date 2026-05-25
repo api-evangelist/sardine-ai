@@ -1,0 +1,285 @@
+aid: sardine-ai
+url: https://raw.githubusercontent.com/api-evangelist/sardine-ai/refs/heads/main/apis.yml
+apis:
+- aid: sardine-ai:sardine-customer-api
+  name: Sardine Customer API
+  tags:
+  - Fraud
+  - Risk
+  - KYC
+  - AML
+  - Identity
+  - Onboarding
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/risk/account-risk/account-risk
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/risk/account-risk/kyb
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/getting-started/apiaccess
+    type: Documentation
+  description: Submit customer profile and onboarding signals (KYC, KYB, document verification, sanctions/PEP
+    screening, identity fraud, synthetic ID detection, behavioral biometrics, device intelligence) and receive a
+    real-time risk decision. The Customer API is the primary onboarding surface used by banks, fintechs, crypto
+    exchanges, and marketplaces to verify individuals and businesses globally. Full API reference is gated behind
+    sandbox access at docs.sardine.ai.
+- aid: sardine-ai:sardine-device-api
+  name: Sardine Device Intelligence API
+  tags:
+  - Device Intelligence
+  - Behavioral Biometrics
+  - Fraud
+  - Account Takeover
+  - Bot Detection
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/getting-started/what-powers-sardine
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/risk/account-risk/account-takeover
+    type: Documentation
+  description: Capture device, network, and behavioral signals from web, iOS, and Android SDKs and resolve them
+    to a Sardine device session for downstream scoring. Powers account takeover protection, bot detection,
+    deepfake/synthetic identity flags, and policy abuse prevention. Sardine reports having profiled 5.4B+ devices
+    across its consortium.
+- aid: sardine-ai:sardine-transaction-api
+  name: Sardine Transaction API
+  tags:
+  - Transaction Monitoring
+  - AML
+  - Payments
+  - Fraud
+  - Chargebacks
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/risk/funding-risk/funding-risk
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/risk/funding-risk/ach-indemnification
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/risk/funding-risk/card-indemnification
+    type: Documentation
+  - url: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
+    type: Documentation
+  description: Submit payment, ACH, wire, card, and crypto transactions for real-time fraud scoring and AML
+    transaction monitoring. Backs Sardine's card chargeback guarantee program and ACH indemnification for
+    unauthorized returns (R05, R07, R10, R11, R29). Sardine reports having screened $1.3T+ in payments.
+- aid: sardine-ai:sardine-issuing-api
+  name: Sardine Issuing API
+  tags:
+  - Card Issuing
+  - Fraud
+  - Payments
+  - Authorization
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/risk/card-spending-risk/card-spending
+    type: Documentation
+  description: Real-time card authorization fraud scoring for card issuers. Returns an approve/decline/step-up
+    recommendation on each authorization event using Sardine's issuer-specific ML models and configurable rules.
+    Tracked as a separate service surface on the Sardine status page.
+- aid: sardine-ai:sardine-crypto-api
+  name: Sardine Crypto API
+  tags:
+  - Crypto
+  - Travel Rule
+  - AML
+  - Compliance
+  - Wallet Screening
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/risk/overview
+    type: Documentation
+  description: Crypto-specific risk and compliance APIs covering wallet screening, on-chain attribution, and
+    Travel Rule messaging for VASPs (Virtual Asset Service Providers). Tracked as Crypto APIs and Crypto Web on
+    the Sardine status page.
+- aid: sardine-ai:sardine-case-management-api
+  name: Sardine Case Management API
+  tags:
+  - Case Management
+  - Investigations
+  - AML
+  - Fraud Ops
+  - Agentic
+  humanURL: https://docs.sardine.ai
+  properties:
+  - url: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
+    type: Documentation
+  description: Programmatic access to Sardine's unified case management surface for fraud and AML
+    investigations. Cases are routed through Sardine's "atomic agents" — OSINT search, data analysis,
+    transaction monitoring, business due diligence, and sanctions screening agents — to compress investigation
+    time from days to minutes. Backs the Agentic AML Ops and Agentic Fraud Ops products.
+name: Sardine
+tags:
+- Fraud Prevention
+- AML
+- Compliance
+- KYC
+- KYB
+- Identity Verification
+- Transaction Monitoring
+- Device Intelligence
+- Behavioral Biometrics
+- Risk
+- Financial Crime
+- Agentic AI
+- Fintech
+kind: contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+common:
+- url: https://www.sardine.ai
+  type: Portal
+- url: https://docs.sardine.ai
+  type: Documentation
+- url: https://docs.sardine.ai/llms.txt
+  name: Sardine Docs LLMs.txt Index
+  type: Documentation
+- url: https://docs.sardine.ai/home
+  name: Sardine Docs Home
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/getting-started/getting-started
+  name: Getting Started With Risk
+  type: GettingStarted
+- url: https://docs.sardine.ai/guides/public/getting-started/apiaccess
+  name: Get Full Documentation Access
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/getting-started/integration-overview
+  name: Integration Overview
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/getting-started/what-powers-sardine
+  name: What Powers Sardine
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/getting-started/how-sardine-bills
+  name: How Sardine Bills
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/getting-started/common-risk-problems
+  name: Common Risk Problems
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/overview
+  name: Risk Categories Overview
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/account-risk/account-risk
+  name: Identity Fraud, KYC and AML
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/account-risk/account-takeover
+  name: Account Takeover
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/account-risk/kyb
+  name: Business Verification (KYB)
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/business-risk/about-business-risk
+  name: Business Risk Operating System
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/card-spending-risk/card-spending
+  name: Issued Card Fraud
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/funding-risk/funding-risk
+  name: Payment Fraud
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/funding-risk/ach-indemnification
+  name: ACH Indemnification
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/funding-risk/card-indemnification
+  name: Card Chargeback Guarantee
+  type: Documentation
+- url: https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring
+  name: Transaction Monitoring
+  type: Documentation
+- url: https://status.sardine.ai
+  name: Sardine Status
+  type: StatusPage
+- url: https://security.sardine.ai
+  name: Sardine Security Portal
+  type: TrustCenter
+- url: https://www.sardine.ai/contact
+  name: Contact Sardine
+  type: Support
+- url: mailto:risksupport@sardine.ai
+  name: Risk Support Email
+  type: Support
+- url: https://www.sardine.ai/about
+  name: About Sardine
+  type: AboutUs
+- url: https://www.sardine.ai/customers
+  name: Sardine Customers
+  type: CustomerCaseStudies
+- url: https://www.sardine.ai/blog
+  type: Blog
+- url: https://www.sardine.ai/careers
+  type: Careers
+- url: https://www.linkedin.com/company/sardine-ai
+  type: LinkedIn
+- url: https://x.com/sardine
+  type: Twitter
+- url: https://github.com/sardine-ai
+  type: GitHubOrganization
+- url: https://github.com/sardine-ai/openapi-mcp-server
+  name: Sardine OpenAPI MCP Server
+  type: Tool
+- url: https://github.com/sardine-ai/mcp-server-manager
+  name: Sardine MCP Server Manager
+  type: Tool
+- url: https://github.com/sardine-ai/chronon
+  name: Chronon (data platform for AI/ML)
+  type: Tool
+- url: https://github.com/sardine-ai/mintlify-docs
+  name: Sardine Mintlify Docs Source
+  type: Documentation
+- url: https://www.sardine.ai/pricing
+  name: Pricing (contact sales)
+  type: Pricing
+- type: Features
+  data:
+  - Agentic AML Ops — atomic agents for OSINT, data analysis, business due diligence, and sanctions screening
+    compress investigations from days to minutes
+  - Agentic Fraud Ops — agent-assisted review of fraud alerts with audit-ready outputs
+  - Global KYC and Global KYB onboarding with sanctions and PEP screening
+  - Identity Verification including document verification, synthetic ID detection, and deepfake detection
+  - Device Intelligence and Behavioral Biometrics SDKs for web, iOS, and Android (5.4B+ devices profiled)
+  - Real-time payment fraud detection across card, ACH, wire, and crypto rails ($1.3T+ payments screened)
+  - Card Chargeback Guarantee Program with liability protection on covered transactions
+  - ACH Indemnification covering unauthorized returns (R05, R07, R10, R11, R29)
+  - Issued Card Fraud protection with real-time authorization scoring for card issuers
+  - Transaction Monitoring for AML compliance with behavioral profiling and customer risk rating
+  - Sanctions Screening and Customer Risk Rating
+  - Case Management with unified queues across fraud, AML, credit, and operations
+  - Sonar — cross-industry fraud intelligence consortium
+  - Connection Graph for relationship and ring-detection across customers, devices, and accounts
+  - Rules Engine plus ML models with configurable scoring per use case
+  - Bot Detection, Account Takeover Protection, Policy Abuse Prevention, Refund Fraud Detection
+  - Job Applicant Fraud Detection
+  - Sponsor Banking Risk Management for BaaS sponsor banks
+  - Credit Underwriting tools and bank/cash flow verification
+  - Crypto compliance APIs including wallet screening and Travel Rule
+  - 400+ enterprise customers including FIS, GoDaddy, Intuit, Nubank, Coastal, Experian, Kalshi, Ascensus,
+    Gusto, Deel, Novo, bunq, Prezzee, Raise, SeatGeek, ZoomInfo, LHV, Whop, First Federal Bank of Kansas City
+  - Investors include Andreessen Horowitz, Visa, Experian, Google Ventures, FIS, Activant Capital, Moody's
+    Analytics, Geodesic Capital, Nyca Partners, Cross Creek Advisors, XYZ Venture Capital, NA Ventures
+    (~$170M total raised)
+  - 4.9/5 G2 rating
+  sources:
+  - https://www.sardine.ai
+  - https://docs.sardine.ai/llms.txt
+  - https://status.sardine.ai
+  - https://www.sardine.ai/about
+  - https://www.sardine.ai/customers
+  updated: '2026-05-25'
+created: '2026-05-25T00:00:00.000Z'
+modified: '2026-05-25'
+position: Consuming
+description: Sardine is a San Francisco-based fraud prevention, AML compliance, and risk management platform
+  for fintechs, banks, marketplaces, and crypto VASPs. It unifies onboarding (KYC, KYB, document and bank
+  verification), device intelligence and behavioral biometrics, payment and card fraud scoring, AML transaction
+  monitoring, sanctions screening, and case management into a single risk operating system. Sardine's "agentic"
+  layer applies atomic agents (OSINT, data analysis, transaction monitoring, business due diligence, sanctions
+  screening) to compress investigation time from days to minutes, while Sonar provides cross-industry fraud
+  intelligence across the consortium. The platform serves 400+ enterprise customers including FIS, GoDaddy,
+  Intuit, Nubank, Novo, and bunq, has screened $1.3T+ in payments, and profiled 5.4B+ devices. Sardine has
+  raised ~$170M from Andreessen Horowitz, Visa, Experian, Google Ventures, FIS, and others. Public docs cover
+  the risk landscape and integration overview; full API reference, SDKs, and sandbox access are gated and
+  require a Sardine account.
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: apievangelist
+  url: https://apievangelist.com
+specificationVersion: '0.16'

@@ -214,13 +214,13 @@ common:
   type: GitHubOrganization
 - url: https://github.com/sardine-ai/openapi-mcp-server
   name: Sardine OpenAPI MCP Server
-  type: Tool
+  type: Tools
 - url: https://github.com/sardine-ai/mcp-server-manager
   name: Sardine MCP Server Manager
-  type: Tool
+  type: Tools
 - url: https://github.com/sardine-ai/chronon
   name: Chronon (data platform for AI/ML)
-  type: Tool
+  type: Tools
 - url: https://github.com/sardine-ai/mintlify-docs
   name: Sardine Mintlify Docs Source
   type: Documentation

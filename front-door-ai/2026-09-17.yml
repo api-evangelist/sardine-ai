@@ -1,0 +1,33 @@
+# Front Door AI Index — sardine-ai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: sardine-ai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.sardine.ai
+  final_host: www.sardine.ai
+  ownership: shared
+  owner: sardine
+  shares_host_with:
+  - sardine
+  inherited_from: null
+  verdict: scored
+  score: null
+  host_score: 38
+  density: null
+  words: 1909
+  tiers:
+    agentic: 24
+    core: 14
+    model: 0
+  ambiguous: 28
+  top_terms:
+    agentic: 22
+    agent: 21
+    AI: 11
+    intelligence: 4
+    automation: 3
+    AI agent: 2
+    ML: 2
+    machine learning: 1

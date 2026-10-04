@@ -4,6 +4,13 @@ apis:
 - aid: sardine-ai:sardine-customer-api
   name: Sardine Customer API
   tags:
+  - Fraud Prevention
+  - Risk Management
+  - KYC
+  - AML
+  - Identity
+  - Onboarding
+  tags_raw:
   - Fraud
   - Risk
   - KYC
@@ -28,6 +35,12 @@ apis:
   tags:
   - Device Intelligence
   - Behavioral Biometrics
+  - Fraud Prevention
+  - Account Takeover
+  - Bot Detection
+  tags_raw:
+  - Device Intelligence
+  - Behavioral Biometrics
   - Fraud
   - Account Takeover
   - Bot Detection
@@ -44,6 +57,12 @@ apis:
 - aid: sardine-ai:sardine-transaction-api
   name: Sardine Transaction API
   tags:
+  - Transaction Monitoring
+  - AML
+  - Payments
+  - Fraud Prevention
+  - Chargebacks
+  tags_raw:
   - Transaction Monitoring
   - AML
   - Payments
@@ -65,6 +84,11 @@ apis:
 - aid: sardine-ai:sardine-issuing-api
   name: Sardine Issuing API
   tags:
+  - Card Issuing
+  - Fraud Prevention
+  - Payments
+  - Authorization
+  tags_raw:
   - Card Issuing
   - Fraud
   - Payments
@@ -98,6 +122,12 @@ apis:
   - Investigations
   - AML
   - Fraud Ops
+  - AI Agents
+  tags_raw:
+  - Case Management
+  - Investigations
+  - AML
+  - Fraud Ops
   - Agentic
   humanURL: https://docs.sardine.ai
   properties:
@@ -109,6 +139,20 @@ apis:
     time from days to minutes. Backs the Agentic AML Ops and Agentic Fraud Ops products.
 name: Sardine
 tags:
+- Fraud Prevention
+- AML
+- Compliance
+- KYC
+- KYB
+- Identity Verification
+- Transaction Monitoring
+- Device Intelligence
+- Behavioral Biometrics
+- Risk Management
+- Financial Crime
+- AI Agents
+- Fintech
+tags_raw:
 - Fraud Prevention
 - AML
 - Compliance

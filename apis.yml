@@ -103,6 +103,12 @@ apis:
 - aid: sardine-ai:sardine-crypto-api
   name: Sardine Crypto API
   tags:
+  - Cryptocurrency
+  - Travel Rule
+  - AML
+  - Compliance
+  - Wallet Screening
+  tags_raw:
   - Crypto
   - Travel Rule
   - AML

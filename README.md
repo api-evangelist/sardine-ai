@@ -1,4 +1,4 @@
-# Sardine (sardine-ai)
+# Sardine
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,143 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Sardine is a San Francisco-based fraud prevention, AML compliance, and risk management platform for fintechs, banks, marketplaces, and crypto VASPs. It unifies onboarding (KYC, KYB, document and bank verification), device intelligence and behavioral biometrics, payment and card fraud scoring, AML transaction monitoring, sanctions screening, and case management into a single risk operating system. Sardine's agentic layer applies atomic agents — OSINT, data analysis, transaction monitoring, business due diligence, and sanctions screening — to compress investigation time from days to minutes, while the Sonar consortium shares fraud intelligence across customers. The platform serves 400+ enterprise customers (FIS, GoDaddy, Intuit, Nubank, Novo, bunq, Coastal, Experian, Kalshi, Ascensus, Gusto, Deel, SeatGeek, Whop, LHV), has screened $1.3T+ in payments, and profiled 5.4B+ devices. Sardine has raised ~$170M from Andreessen Horowitz, Visa, Experian, Google Ventures, FIS, Activant Capital, Moody's Analytics, Geodesic Capital, and Nyca Partners.
+Sardine is a San Francisco-based fraud prevention, AML compliance, and risk management platform for fintechs, banks, marketplaces, and crypto VASPs. It unifies onboarding (KYC, KYB, document and bank verification), device intelligence and behavioral biometrics, payment and card fraud scoring, AML transaction monitoring, sanctions screening, and case management into a single risk operating system. Sardine's "agentic" layer applies atomic agents (OSINT, data analysis, transaction monitoring, business due diligence, sanctions screening) to compress investigation time from days to minutes, while Sonar provides cross-industry fraud intelligence across the consortium. The platform serves 400+ enterprise customers including FIS, GoDaddy, Intuit, Nubank, Novo, and bunq, has screened $1.3T+ in payments, and profiled 5.4B+ devices. Sardine has raised ~$170M from Andreessen Horowitz, Visa, Experian, Google Ventures, FIS, and others. Public docs cover the risk landscape and integration overview; full API reference, SDKs, and sandbox access are gated and require a Sardine account.
 
-**URL:** [Visit APIs.json](https://raw.githubusercontent.com/api-evangelist/sardine-ai/refs/heads/main/apis.yml)
+**Areas:** Fraud Prevention · AML · Compliance · KYC · KYB · Identity Verification · Transaction Monitoring · Device Intelligence · Behavioral Biometrics · Risk Management · Financial Crime · AI Agents
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Sardine on APIs.io
 
-## Tags
+Everything profiled for Sardine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sardine-ai/](https://apis.io/providers/sardine-ai/)** — or go straight to one of the APIs or properties below.
 
- - Fraud Prevention, AML, Compliance, KYC, KYB, Identity Verification, Transaction Monitoring, Device Intelligence, Behavioral Biometrics, Risk, Financial Crime, Agentic AI, Fintech
+### APIs (6)
 
-## Timestamps
+- [Sardine Customer API](https://apis.io/apis/sardine-ai/sardine-customer-api/) — Submit customer profile and onboarding signals (KYC, KYB, document verification, sanctions/PEP screening, identity fraud, synthetic ID detection, behavioral…
+- [Sardine Device Intelligence API](https://apis.io/apis/sardine-ai/sardine-device-api/) — Capture device, network, and behavioral signals from web, iOS, and Android SDKs and resolve them to a Sardine device session for downstream scoring. Powers…
+- [Sardine Transaction API](https://apis.io/apis/sardine-ai/sardine-transaction-api/) — Submit payment, ACH, wire, card, and crypto transactions for real-time fraud scoring and AML transaction monitoring. Backs Sardine's card chargeback…
+- [Sardine Issuing API](https://apis.io/apis/sardine-ai/sardine-issuing-api/) — Real-time card authorization fraud scoring for card issuers. Returns an approve/decline/step-up recommendation on each authorization event using Sardine's…
+- [Sardine Crypto API](https://apis.io/apis/sardine-ai/sardine-crypto-api/) — Crypto-specific risk and compliance APIs covering wallet screening, on-chain attribution, and Travel Rule messaging for VASPs (Virtual Asset Service…
+- [Sardine Case Management API](https://apis.io/apis/sardine-ai/sardine-case-management-api/) — Programmatic access to Sardine's unified case management surface for fraud and AML investigations. Cases are routed through Sardine's "atomic agents" —…
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+### Published properties
 
-## Documentation Access
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Sardine maintains two tiers of documentation:
+#### Security (3)
 
-- **Public docs** at [docs.sardine.ai](https://docs.sardine.ai) — risk-category overviews, integration overview, billing model, and the [llms.txt index](https://docs.sardine.ai/llms.txt). No machine-readable API surface is published publicly.
-- **Protected docs** — step-by-step integration guides, full API reference, SDKs, sandbox credentials, and sample apps. Requires a Sardine dashboard login. Request access from a Sardine representative or via [risksupport@sardine.ai](mailto:risksupport@sardine.ai).
+Authentication, trust centre, and vulnerability disclosure.
 
-This profile catalogs Sardine's API surface from public documentation, the [Sardine status page](https://status.sardine.ai) service inventory, and the [llms.txt](https://docs.sardine.ai/llms.txt) index. No placeholder OpenAPI specs, JSON Schemas, or capabilities are generated because no public machine-readable surface exists.
+- [Sardine Ai Domain Security](https://apis.io/security/sardine-ai/sardine-ai-domain-security/)
+- [Sardine Ai Trust Center](https://apis.io/security/sardine-ai/sardine-ai-trust-center/)
+- [Sardine Ai Vulnerability Disclosure](https://apis.io/security/sardine-ai/sardine-ai-vulnerability-disclosure/)
 
-## APIs
+## Where to find this API
 
-### Sardine Customer API
-Submit customer profile and onboarding signals (KYC, KYB, document verification, sanctions/PEP screening, identity fraud, synthetic ID detection, behavioral biometrics, device intelligence) and receive a real-time risk decision. The primary onboarding surface used by banks, fintechs, crypto exchanges, and marketplaces to verify individuals and businesses globally.
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — Account Risk](https://docs.sardine.ai/guides/public/risk/account-risk/account-risk)
-- [Documentation — KYB](https://docs.sardine.ai/guides/public/risk/account-risk/kyb)
-- [Documentation — API Access](https://docs.sardine.ai/guides/public/getting-started/apiaccess)
-
-### Sardine Device Intelligence API
-Capture device, network, and behavioral signals from web, iOS, and Android SDKs and resolve them to a Sardine device session for downstream scoring. Powers account takeover protection, bot detection, deepfake/synthetic identity flags, and policy abuse prevention. Sardine reports having profiled 5.4B+ devices across its consortium.
-
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — What Powers Sardine](https://docs.sardine.ai/guides/public/getting-started/what-powers-sardine)
-- [Documentation — Account Takeover](https://docs.sardine.ai/guides/public/risk/account-risk/account-takeover)
-
-### Sardine Transaction API
-Submit payment, ACH, wire, card, and crypto transactions for real-time fraud scoring and AML transaction monitoring. Backs Sardine's card chargeback guarantee program and ACH indemnification for unauthorized returns (R05, R07, R10, R11, R29). Sardine reports having screened $1.3T+ in payments.
-
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — Funding Risk](https://docs.sardine.ai/guides/public/risk/funding-risk/funding-risk)
-- [Documentation — ACH Indemnification](https://docs.sardine.ai/guides/public/risk/funding-risk/ach-indemnification)
-- [Documentation — Card Chargeback Guarantee](https://docs.sardine.ai/guides/public/risk/funding-risk/card-indemnification)
-- [Documentation — Transaction Monitoring](https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring)
-
-### Sardine Issuing API
-Real-time card authorization fraud scoring for card issuers. Returns an approve/decline/step-up recommendation on each authorization event using Sardine's issuer-specific ML models and configurable rules. Tracked as a separate service surface on the Sardine status page.
-
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — Card Spending Risk](https://docs.sardine.ai/guides/public/risk/card-spending-risk/card-spending)
-
-### Sardine Crypto API
-Crypto-specific risk and compliance APIs covering wallet screening, on-chain attribution, and Travel Rule messaging for VASPs (Virtual Asset Service Providers). Tracked as Crypto APIs and Crypto Web on the Sardine status page.
-
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — Risk Overview](https://docs.sardine.ai/guides/public/risk/overview)
-
-### Sardine Case Management API
-Programmatic access to Sardine's unified case management surface for fraud and AML investigations. Cases are routed through Sardine's atomic agents — OSINT search, data analysis, transaction monitoring, business due diligence, and sanctions screening — to compress investigation time from days to minutes. Backs the Agentic AML Ops and Agentic Fraud Ops products.
-
-**Human URL:** [https://docs.sardine.ai](https://docs.sardine.ai)
-
-- [Documentation — Transaction Monitoring](https://docs.sardine.ai/guides/public/risk/transaction-monitoring/transaction-monitoring)
-
-## Common Properties
-
-- [Portal — sardine.ai](https://www.sardine.ai)
-- [Documentation — docs.sardine.ai](https://docs.sardine.ai)
-- [Documentation — LLMs.txt Index](https://docs.sardine.ai/llms.txt)
-- [GettingStarted — Getting Started With Risk](https://docs.sardine.ai/guides/public/getting-started/getting-started)
-- [Documentation — Get Full Documentation Access](https://docs.sardine.ai/guides/public/getting-started/apiaccess)
-- [Documentation — Integration Overview](https://docs.sardine.ai/guides/public/getting-started/integration-overview)
-- [Documentation — What Powers Sardine](https://docs.sardine.ai/guides/public/getting-started/what-powers-sardine)
-- [Documentation — How Sardine Bills](https://docs.sardine.ai/guides/public/getting-started/how-sardine-bills)
-- [Documentation — Common Risk Problems](https://docs.sardine.ai/guides/public/getting-started/common-risk-problems)
-- [Documentation — Risk Categories Overview](https://docs.sardine.ai/guides/public/risk/overview)
-- [Documentation — Business Risk Operating System](https://docs.sardine.ai/guides/public/risk/business-risk/about-business-risk)
-- [StatusPage](https://status.sardine.ai)
-- [TrustCenter — Security Portal](https://security.sardine.ai)
-- [Support — Contact](https://www.sardine.ai/contact)
-- [Support — risksupport@sardine.ai](mailto:risksupport@sardine.ai)
-- [AboutUs](https://www.sardine.ai/about)
-- [CustomerCaseStudies](https://www.sardine.ai/customers)
+- [Website](https://www.sardine.ai/)
+- [Documentation](https://docs.sardine.ai)
+- [Getting started](https://docs.sardine.ai/guides/public/getting-started/getting-started)
+- [Pricing](https://www.sardine.ai/pricing)
+- [Support](https://www.sardine.ai/contact)
 - [Blog](https://www.sardine.ai/blog)
-- [Careers](https://www.sardine.ai/careers)
-- [LinkedIn](https://www.linkedin.com/company/sardine-ai)
-- [Twitter](https://x.com/sardine)
-- [GitHubOrganization — sardine-ai](https://github.com/sardine-ai)
-- [Tool — Sardine OpenAPI MCP Server](https://github.com/sardine-ai/openapi-mcp-server)
-- [Tool — Sardine MCP Server Manager](https://github.com/sardine-ai/mcp-server-manager)
-- [Tool — Chronon (data platform for AI/ML)](https://github.com/sardine-ai/chronon)
-- [Documentation — Sardine Mintlify Docs Source](https://github.com/sardine-ai/mintlify-docs)
-- [Pricing — contact sales](https://www.sardine.ai/pricing)
+- [Trust centre](https://security.sardine.ai)
+- [GitHub](https://github.com/sardine-ai)
+- [Status](https://status.sardine.ai)
 
-## Status Page Service Inventory
+## API Evangelist rating
 
-The [Sardine status page](https://status.sardine.ai) tracks uptime for the following service surfaces, which align with the API groupings in this profile:
+**Kin Score 20.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-- Customer APIs
-- Device APIs
-- Issuing API
-- Crypto APIs
-- Crypto Web (external provider)
-- Dashboard
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 18.4 |
 
-## GitHub Organization Highlights
+**Agent readiness 0.0** — human-only
 
-The [sardine-ai](https://github.com/sardine-ai) GitHub org has 55 public repositories, most of which are forks of GitHub Actions and developer tooling used in Sardine's own CI/CD. The notable original repositories are:
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-- [chronon](https://github.com/sardine-ai/chronon) — Scala data platform for serving ML applications (originally authored by Stripe; Sardine maintains a fork).
-- [openapi-mcp-server](https://github.com/sardine-ai/openapi-mcp-server) — Wraps complex OpenAPI specs as an MCP server so AI agents can navigate them in plain language.
-- [mcp-server-manager](https://github.com/sardine-ai/mcp-server-manager) — TypeScript MCP server manager.
-- [mintlify-docs](https://github.com/sardine-ai/mintlify-docs) — Source for the Mintlify-hosted docs site at docs.sardine.ai.
-- [zipline-chronon](https://github.com/sardine-ai/zipline-chronon) — Scala companion to chronon.
+**Regulatory alignment 16.0** — AI & Biometrics
 
-No public SDK repositories (e.g., `sardine-sdk-python`, `sardine-sdk-typescript`) are published in the org — SDKs and sample apps are distributed through the gated developer portal.
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sardine-ai/](https://apis.io/providers/sardine-ai/).
 
-## Pricing and Billing Model
+## How this profile is made
 
-Sardine does not publish a self-serve price list. Pricing is enterprise/contract-based and product-specific (per-decision for risk APIs, per-device-session for device intelligence, per-investigation/case for AML ops, plus indemnification/guarantee programs that price as insurance). The public [How Sardine Bills](https://docs.sardine.ai/guides/public/getting-started/how-sardine-bills) page explains the billing model at a conceptual level. Plans, rate limits, and FinOps artifacts are not generated for this profile because the underlying commercial surface is not publicly documented.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Artifacts
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Sardine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-Sardine does not publish public OpenAPI, JSON Schema, JSON-LD, capability, plans, rate-limits, or FinOps artifacts. The full API reference, SDKs, and sandbox access are gated behind a Sardine account at [docs.sardine.ai](https://docs.sardine.ai). Per the API Evangelist pipeline policy (no placeholder specs), no machine-readable artifact folders are created in this repository.
+## Open an issue
 
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** info@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sardine-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
